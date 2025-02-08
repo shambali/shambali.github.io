@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shambali</title>
+    <link href='../style.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
+    <script src="../spotlight.bundle.js"></script>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <nav class="left">
+        <a href="../index.html">
+          <i>home</i>
+          <div>Ana Sayfa</div>
+        </a>
+        <a href="../search.html">
+          <i>search</i>
+          <div>Arama</div>
+        </a>
+        <a href="../about.html">
+          <i>code</i>
+          <div>Hakkında</div>
+        </a>
+    </nav>
+      <main class="responsive">
+        <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/2048px-Google_Chrome_icon_%28February_2022%29.svg.png" style="float: left;width: 8%;height: 8%;padding:0 10px 10px 0;"><br>
+        <a style="cursor: default;font-size: xx-large">Google Chrome</a>
+        <button class="active" style="float: right;">
+            <span>İndir</span>
+            <i>arrow_drop_down</i>
+            <menu>
+              <a href="../files/ChromeSetup.exe">Windows</a>
+              <a href="../files/ChromeSetupX86.exe">Windows x86</a>
+              <a data-ui="#dialog" rel="nofollow">WinGet</a>
+              <a href="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb" rel="nofollow">Linux (Debian)</a>
+              <a href="https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm" rel="nofollow">Linux (Fedora)</a>
+              <a href="https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg" rel="nofollow">MacOS</a>
+            </menu>
+        </button> 
+        <p>Google'ın resmî web tarayıcısı olan Chrome hızlı, güvenli ve özelleştirilebilir olacak şekilde tasarlanmıştır.</p><br>
+        <div class="spotlight-group row scroll" data-fit="contain" data-autohide="all">
+          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Google_Chrome_on_Windows_11.png/640px-Google_Chrome_on_Windows_11.png">
+              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Google_Chrome_on_Windows_11.png/640px-Google_Chrome_on_Windows_11.png">
+          </a>
+          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Page_Wikip%C3%A9dia_de_Google_Chrome_dans_Google_Chrome_Version_109.png/640px-Page_Wikip%C3%A9dia_de_Google_Chrome_dans_Google_Chrome_Version_109.png">
+              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Page_Wikip%C3%A9dia_de_Google_Chrome_dans_Google_Chrome_Version_109.png/640px-Page_Wikip%C3%A9dia_de_Google_Chrome_dans_Google_Chrome_Version_109.png">
+          </a>
+          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Google_Chrome_75_screenshot.png/640px-Google_Chrome_75_screenshot.png">
+              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Google_Chrome_75_screenshot.png/640px-Google_Chrome_75_screenshot.png">
+          </a>
+      </div>
+      </main>  
+      <dialog id="dialog">
+        <h5>WinGet ile indirin!</h5>
+        <p><code>winget install --id=Google.Chrome  -e</code></p>
+        <nav>
+          <button data-ui="#dialog">Geri</button>
+        </nav>
+      </dialog>
+</body>
+</html>
