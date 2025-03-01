@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shambali</title>
+    <link href="../style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
+    <script src="../spotlight.bundle.js"></script>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <nav class="left">
+        <a href="../index.html">
+          <i>home</i>
+          <div>Ana Sayfa</div>
+        </a>
+        <a href="../explore.html">
+          <i>widgets</i>
+          <div>Keşfet</div>
+        </a>
+        <a href="../about.html">
+          <i>code</i>
+          <div>Hakkında</div>
+        </a>
+    </nav>
+      <main class="responsive">
+        <br><img src="https://raw.githubusercontent.com/M2Team/NanaZip/main/Assets/NanaZip.png" style="float: left;width: 100px;height: 100px;padding:0 10px 10px 0;"><br>
+        <a style="cursor: default;font-size: xx-large">NanaZip</a>
+        <button class="active" style="float: right;">
+            <span>İndir</span>
+            <i>arrow_drop_down</i>
+            <menu>
+              <a href="https://github.com/M2Team/NanaZip/releases/download/5.0.1263.0/NanaZip_5.0.1263.0.msixbundle">Windows</a>
+              <a data-ui="#dialog" rel="nofollow">WinGet</a>
+            </menu>
+        </button> 
+        <p>NanaZip, 7-Zip'ten türetilmiş, modern Windows için tasarlanmış açık kaynaklı bir arşivleyicidir.</p><br>
+        <div class="spotlight-group row scroll" data-fit="contain" data-autohide="all">
+          <a class="spotlight" href="https://raw.githubusercontent.com/M2Team/NanaZip/refs/heads/main/Documents/ContextMenu.png">
+              <img class="medium-width small-height round" src="https://raw.githubusercontent.com/M2Team/NanaZip/refs/heads/main/Documents/ContextMenu.png">
+          </a>
+          <a class="spotlight" href="https://raw.githubusercontent.com/M2Team/NanaZip/refs/heads/main/Documents/MainWindowLightMode.png">
+              <img class="medium-width small-height round" src="https://raw.githubusercontent.com/M2Team/NanaZip/refs/heads/main/Documents/MainWindowLightMode.png">
+          </a>
+          <a class="spotlight" href="https://raw.githubusercontent.com/M2Team/NanaZip/refs/heads/main/Documents/MainWindowDarkMode.png">
+              <img class="medium-width small-height round" src="https://raw.githubusercontent.com/M2Team/NanaZip/refs/heads/main/Documents/MainWindowDarkMode.png">
+          </a>
+      </div>
+      </main>  
+      <dialog id="dialog">
+        <h5>WinGet ile indirin!</h5>
+        <p><code>winget install --id=M2Team.NanaZip  -e</code></p>
+        <nav>
+          <button data-ui="#dialog">Geri</button>
+        </nav>
+      </dialog>
+</body>
+</html>

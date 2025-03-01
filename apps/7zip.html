@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shambali</title>
+    <link href="../style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
+    <script src="../spotlight.bundle.js"></script>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <nav class="left">
+        <a href="../index.html">
+          <i>home</i>
+          <div>Ana Sayfa</div>
+        </a>
+        <a href="../explore.html">
+          <i>widgets</i>
+          <div>Keşfet</div>
+        </a>
+        <a href="../about.html">
+          <i>code</i>
+          <div>Hakkında</div>
+        </a>
+    </nav>
+      <main class="responsive">
+        <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/7-Zip_Icon.svg/640px-7-Zip_Icon.svg.png" style="float: left;width: 130px;height: 100px;padding:0 10px 10px 0;"><br>
+        <a style="cursor: default;font-size: xx-large">7-Zip</a>
+        <button class="active" style="float: right;">
+            <span>İndir</span>
+            <i>arrow_drop_down</i>
+            <menu>
+              <a href="https://www.7-zip.org/a/7z2409-x64.exe">Windows</a>
+              <a data-ui="#dialog" rel="nofollow">WinGet</a>
+              <a href="https://www.7-zip.org/a/7z2409-linux-x64.tar.xz" rel="nofollow">Linux</a>
+              <a href="https://www.7-zip.org/a/7z2409-mac.tar.xz" rel="nofollow">MacOS</a>
+            </menu>
+        </button> 
+        <p>7-Zip, yüksek sıkıştırma oranına sahip bir dosya arşivleyicisidir.</p><br>
+        <div class="spotlight-group row scroll" data-fit="contain" data-autohide="all">
+          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/5/55/7-Zip.png">
+              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/5/55/7-Zip.png">
+          </a>
+          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/c/c7/7-Zip_19.00-DE.png">
+              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/7-Zip_19.00-DE.png">
+          </a>
+          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/0/05/7-Zip_19.00_%28x64%29.png">
+              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/0/05/7-Zip_19.00_%28x64%29.png">
+          </a>
+      </div>
+      </main>  
+      <dialog id="dialog">
+        <h5>WinGet ile indirin!</h5>
+        <p><code>winget install --id=7zip.7zip  -e</code></p>
+        <nav>
+          <button data-ui="#dialog">Geri</button>
+        </nav>
+      </dialog>
+</body>
+</html>
