@@ -14,10 +14,10 @@ Shambali projesi, internetteki ücretsiz uygulamaları indirmenizi sağlayan aç
 
 ## Ekran Görüntüleri
 
- ![Ana Sayfa](https://shambali.github.io/files/screenshot.png "Ana Sayfa")
+ ![Ana Sayfa](https://raw.githubusercontent.com/shambali/shambali.github.io/refs/heads/main/files/screenshot.png)
 
 •  Ana Sayfa
 
- ![Keşfet](https://shambali.github.io/files/screenshot2.png "Keşfet")
+ ![Keşfet](https://raw.githubusercontent.com/shambali/shambali.github.io/refs/heads/main/files/screenshot2.png)
 
 • Keşfet
