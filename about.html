@@ -37,6 +37,24 @@
         </button>
       </a><br><br>            
         <p style="font-size: larger;">Shambali projesi, internetteki ücretsiz uygulamaları indirmenizi sağlayan açık kaynaklı bir projedir. Gezginler ve Tamindir gibi platformlardan ilham alınarak geliştirilmiştir. Beer CSS, Spotlight gibi teknolojiler kullanılarak oluşturulmuştur.</p>
-      </main>      
+      </main>   
+      <script>
+        function temaKontrolFavicon() {
+            const link = document.querySelector("link[rel~='icon']");
+            if (!link) return; // Favicon linki yoksa çık
+      
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+              // Koyu tema
+              link.href = 'favicon.ico';
+            } else {
+              // Açık tema
+              link.href = 'faviconalt.ico';
+            }
+          }
+      
+            // Sayfa yüklendiğinde ve tema değiştiğinde fonksiyonu çağır
+            temaKontrolFavicon();
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', temaKontrolFavicon);
+      </script>   
 </body>
 </html>

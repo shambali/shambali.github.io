@@ -43,3 +43,51 @@ body.dark {
     --surface-container-high:#282b27 !important;
     --surface-container-highest:#333531 !important;
 }
+
+body.light {
+    --primary:#006e1c !important;
+    --on-primary:#ffffff !important;
+    --primary-container:#94f990 !important;
+    --on-primary-container:#002204 !important;
+    --secondary:#52634f !important;
+    --on-secondary:#ffffff !important;
+    --secondary-container:#d5e8cf !important;
+    --on-secondary-container:#111f0f !important;
+    --tertiary:#38656a !important;
+    --on-tertiary:#ffffff !important;
+    --tertiary-container:#bcebf0 !important;
+    --on-tertiary-container:#002023 !important;
+    --error:#ba1a1a !important;
+    --on-error:#ffffff !important;
+    --error-container:#ffdad6 !important;
+    --on-error-container:#410002 !important;
+    --background:#fcfdf6 !important;
+    --on-background:#1a1c19 !important;
+    --surface:#f9faf4 !important;
+    --on-surface:#1a1c19 !important;
+    --surface-variant:#dee5d8 !important;
+    --on-surface-variant:#424940 !important;
+    --outline:#72796f !important;
+    --outline-variant:#c2c9bd !important;
+    --shadow:#000000 !important;
+    --scrim:#000000 !important;
+    --inverse-surface:#2f312d !important;
+    --inverse-on-surface:#f0f1eb !important;
+    --inverse-primary:#78dc77 !important;
+    --surface-dim:#dadad4 !important;
+    --surface-bright:#f9faf4 !important;
+    --surface-container-lowest:#ffffff !important;
+    --surface-container-low:#f3f4ee !important;
+    --surface-container:#eeeee8 !important;
+    --surface-container-high:#e8e9e2 !important;
+    --surface-container-highest:#e2e3dd !important;
+    }
+
+.main-logo{
+    content: url('logoalt.png');
+  }
+  @media (prefers-color-scheme: dark) {
+    .main-logo {
+      content: url('logo.png');
+    }
+  }

@@ -10,8 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" class="favicon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" class="favicon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body onload="startTime()">
     <nav class="left">
@@ -29,7 +29,7 @@
         </a>
       </nav>
       <main class="responsive">
-        <img src="logo.png" alt="Şambali" style="float: left;width: 100px;height: 100px;padding:0 10px 10px 0;">
+        <img src="logo.png" class="main-logo" alt="Şambali" style="float: left;width: 100px;height: 100px;padding:0 10px 10px 0;">
         <h2>Shambali</h2>
         <div id="date"></div>
         <br>
@@ -114,6 +114,23 @@
       var curYear = today.getFullYear();
       var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
       document.getElementById("date").innerHTML = date;}
+
+      function temaKontrolFavicon() {
+      const link = document.querySelector("link[rel~='icon']");
+      if (!link) return; // Favicon linki yoksa çık
+
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // Koyu tema
+        link.href = 'favicon.ico';
+      } else {
+        // Açık tema
+        link.href = 'faviconalt.ico';
+      }
+    }
+
+      // Sayfa yüklendiğinde ve tema değiştiğinde fonksiyonu çağır
+      temaKontrolFavicon();
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', temaKontrolFavicon);
       </script>          
 </body>
 </html>
