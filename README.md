@@ -6,11 +6,13 @@ Shambali projesi, internetteki ücretsiz uygulamaları indirmenizi sağlayan aç
 
 ## İçerikler
 
-•   Beer CSS
+* Beer CSS
 
-•   Spotlight
+* Spotlight
 
-•   Gravesoft MSDL
+* Gravesoft MSDL
+
+* Giscus
 
 ## Ekran Görüntüleri
 
