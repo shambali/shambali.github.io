@@ -6,13 +6,11 @@ Shambali projesi, internetteki ücretsiz uygulamaları indirmenizi sağlayan aç
 
 ## İçerikler
 
-* Beer CSS
+* [Beer CSS](https://github.com/beercss/beercss)
 
-* Spotlight
+* [Spotlight](https://github.com/nextapps-de/spotlight)
 
-* Gravesoft MSDL
-
-* Giscus
+* [Giscus](https://github.com/giscus/giscus)
 
 ## Ekran Görüntüleri
 
