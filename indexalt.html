@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -36,15 +37,9 @@
         <h1>Shambali</h1>
         <div id="date"></div>
         <br>
-        <table class="no-margin">
-          <tr>
-            <td style="text-align: left;width: 40%;"><h1>Öne Çıkanlar</h1></td>
-            <td style="text-align: left;width: 35%;"><h1>Yeni Eklenenler</h1></td>
-          </tr>
-        </table>
-        <div class="container">
-          <div class="lcard">
-          <div class="buyuk-kart">
+        <h1>Öne Çıkanlar</h1>
+        <div class="grid">
+          <div class="s12 m12 l3">
             <article class="round medium">
               <img class="large" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_(February_2022).svg/60px-Google_Chrome_icon_(February_2022).svg.png">
               <div class="row">
@@ -56,12 +51,12 @@
               </div>
               <nav class="bottom-align">
               <a href="apps/chrome.html">
-                <button>İndir <i>download</i></button>
+                <button>İndir</button>
             </a>                
           </nav>
             </article>   
         </div>
-        <div class="buyuk-kart">
+        <div class="s12 m12 l3">
           <article class="round medium">
             <img class="large" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/60px-Firefox_logo%2C_2019.svg.png">
               <div class="row">
@@ -73,49 +68,85 @@
               </div>
               <nav class="bottom-align">
               <a href="apps/firefox.html">
-                <button>İndir <i>download</i></button>
+                <button>İndir</button>
               </a>
             </nav>
             </article>              
         </div>
-      </div>
-        <div class="rcard">
-        <a class="card-alt" href="apps/shotcut.html">
-          <article class="round card-alt ripple">
-            <img class="large" src="files/shotcut-logo-512x512.png">
+        </div>
+        <h1>Yeni Eklenenler</h1><br>
+        <div class="grid">
+        <div class="s12 m12 l3 cards">
+          <article class="round medium">
+            <img class="circle large" src="files/shotcut-logo-512x512.png">
               <div class="row">
                 <div class="max">
                   <h2>Shotcut</h2>
+                  <h3>Video Düzenleyicisi</h3>
+                  <p class="app-description">Shotcut, Windows, Mac ve Linux için ücretsiz, açık kaynaklı, çok platformlu bir video düzenleyicisidir.</p>
                 </div>
               </div>
-            </article>         
-        </a>
-        <a class="card-alt" href="apps/floorp.html">
-          <article class="round card-alt ripple">
-            <img class="large" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Floorp_logo_without_text.svg/60px-Floorp_logo_without_text.svg.png">
+              <nav class="bottom-align">
+                <a href="apps/shotcut.html">
+                <button>İndir <i>download</i></button>
+              </a>
+              </nav>
+            </article>           
+        </div>
+        <div class="s12 m12 l3 cards">
+          <article class="round medium">
+            <img class="circle large" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Floorp_logo_without_text.svg/60px-Floorp_logo_without_text.svg.png">
               <div class="row">
                 <div class="max">
                   <h2>Floorp</h2>
+                  <h3>İnternet Tarayıcısı</h3>
+                  <p class="app-description">Floorp, Firefox üzerine kurulmuş, Japonya'da geliştirilmiş, mükemmel gizlilik ve esnekliğe sahip yeni bir tarayıcıdır.</p>
+                </div>
+              </div>
+              <nav class="bottom-align">
+                <a href="apps/floorp.html">
+                <button>İndir <i>download</i></button>
+              </a>
+              </nav>
             </article>           
-          </a>
-        <a class="card-alt" href="apps/okular.html">
-          <article class="round card-alt ripple">
-            <img class="large" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/KDE-graphics-viewer-document.svg/60px-KDE-graphics-viewer-document.svg.png">
-                  <h2>Okular</h2>
-            </article>           
-        </a>
-        <a class="l3" href="apps/thorium.html">
-          <article class="round ripple">
-            <div style="display: flex; align-items: center;">
-              <img class="large" src="files/thorium.svg">
-              <h2 class="small-margin">Thorium</h2>
-            </div>
-            <p class="app-description-alt no-round">Thorium, Chromium tabanlı, çok platformlu bir web tarayıcısıdır.</p>
-            </article>           
-        </a>
         </div>
+        <div class="s12 m12 l3 cards">
+          <article class="round medium">
+            <img class="circle large" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/KDE-graphics-viewer-document.svg/60px-KDE-graphics-viewer-document.svg.png">
+              <div class="row">
+                <div class="max">
+                  <h2>Okular</h2>
+                  <h3>Belge Görüntüleyici</h3>
+                  <p class="app-description">Okular, PDF, çizgi roman, EPub, görsel, Markdown ve daha birçok belgeyi okuyup görüntüleyebilen çok yönlü bir uygulamadır.</p>
+                </div>
+              </div>
+              <nav class="bottom-align">
+                <a href="apps/okular.html">
+                <button>İndir <i>download</i></button>
+              </a>
+              </nav>
+            </article>           
+        </div>
+        <div class="s12 m12 l3 cards">
+          <article class="round medium">
+            <img class="circle large" src="files/thorium.svg">
+              <div class="row">
+                <div class="max">
+                  <h2>Thorium</h2>
+                  <h3>İnternet Tarayıcısı</h3>
+                  <p class="app-description">Thorium, Chromium tabanlı, çok platformlu bir web tarayıcısıdır.</p>
+                </div>
+              </div>
+              <nav class="bottom-align">
+                <a href="apps/thorium.html">
+                <button>İndir <i>download</i></button>
+              </a>
+              </nav>
+            </article>           
+        </div>
+      </div>
+      </main>
       <script>
-        localStorage.clear();
       // https://codepen.io/paarmita/pen/YroXwv
       function startTime() {
       var today = new Date();
@@ -145,10 +176,6 @@
       // Sayfa yüklendiğinde ve tema değiştiğinde fonksiyonu çağır
       temaKontrolFavicon();
       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', temaKontrolFavicon);
-    
-      if (window.innerWidth < 768) {
-    window.location.href = "indexalt.html";
-   }
 
       </script>          
 </body>

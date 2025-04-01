@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 body {
     font-size: 15px !important;
     padding: 3%;
@@ -91,6 +90,14 @@ body.light {
       -webkit-line-clamp: 2; /* Maksimum satır sayısı */
       -webkit-box-orient: vertical;
   }
+    .app-description-alt {
+    max-height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Maksimum satır sayısı */
+    -webkit-box-orient: vertical;
+  }
 
   h1{
     font-size: 3em !important;
@@ -102,7 +109,32 @@ body.light {
     font-size: 1.15em !important;
     margin-top: 0.25em !important;
   }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
   
+  .lcard {
+    width: 48%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .rcard {
+    width: 45%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; 
+  }
+  
+  .card-alt {
+    height: 100%;
+    width: 11em
+  }
+
 .main-logo{
     content: url('logoalt.png');
   }
@@ -111,3 +143,9 @@ body.light {
       content: url('logo.png');
     }
   }
+.responsive{
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standart */
+}
