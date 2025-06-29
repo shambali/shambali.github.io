@@ -9,19 +9,22 @@
     <meta name="keywords" content="Shambali, program indir, ücretsiz program, yazılım indir, bilgisayar programları, windows program indir, mac program indir, en iyi programlar, popüler programlar, güvenli program indir, hızlı program indir, son sürüm programlar, program arşivi, program listesi, program incelemeleri, program alternatifleri, açık kaynak programlar, ticari programlar, eğitim programları, oyun indir, uygulama mağazası, program kategorileri, program güncelleme, program kurulumu, program desteği, program forum, program blog, program haberleri, program kampanyaları, program indirimleri, program kuponları, lisanslı programlar, tam sürüm programlar, deneme sürümü programlar, online programlar, çevrimdışı programlar, güvenilir program siteleri">
     <meta name="google-site-verification" content="r-ATJ5xz_qJAInsI11bBJ_s23WSHEPaMu9J2SGeG7V0"/>
     <title>Shambali</title>
-    <link href='style.css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
+    <script src="device-detector.js"></script>
     <link rel="icon" class="favicon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" class="favicon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body onload="startTime()">
-    <nav class="left">
+    <nav class="left medium-space" id="navbar">
         <a href="index.html">
-          <i>home</i>
-          <div>Ana Sayfa</div>
+        <button class="extend square round">
+      <i>home</i>
+      <span>Giriş</span>
+       </button>
         </a>
         <a href="explore.html">
           <i>widgets</i>
@@ -78,16 +81,50 @@
         <div class="grid">
         <div class="s12 m12 l3 cards">
           <article class="round medium">
-            <img class="circle large" src="files/shotcut-logo-512x512.png">
+            <img class="circle large" src="https://dl.flathub.org/media/io/github/zaps166.QMPlay2/090788457f1e4e3983ecc56769adb1d1/icons/128x128@2/io.github.zaps166.QMPlay2.png">
               <div class="row">
                 <div class="max">
-                  <h2>Shotcut</h2>
-                  <h3>Video Düzenleyicisi</h3>
-                  <p class="app-description">Shotcut, Windows, Mac ve Linux için ücretsiz, açık kaynaklı, çok platformlu bir video düzenleyicisidir.</p>
+                  <h2>QMPlay2</h2>
+                  <h3>Medya Oynatıcısı</h3>
+                  <p class="app-description">QMPlay2, çoğu formatı ve codec'i oynatabilen bir video ve ses oynatıcıdır.</p>
                 </div>
               </div>
               <nav class="bottom-align">
-                <a href="apps/shotcut.html">
+                <a href="apps/qmplay2.html">
+                <button>İndir <i>download</i></button>
+              </a>
+              </nav>
+            </article>           
+        </div>
+      <div class="s12 m12 l3 cards">
+          <article class="round medium">
+            <img class="circle large" src="https://obsproject.com/assets/images/new_icon_small-r.png">
+              <div class="row">
+                <div class="max">
+                  <h2>OBS</h2>
+                  <h3>Ekran Yakalayıcı</h3>
+                  <p class="app-description">Video kaydı ve canlı yayın için özgür ve açık kaynaklı yazılım.</p>
+                </div>
+              </div>
+              <nav class="bottom-align">
+                <a href="apps/obs.html">
+                <button>İndir <i>download</i></button>
+              </a>
+              </nav>
+            </article>           
+        </div>
+      <div class="s12 m12 l3 cards">
+          <article class="round medium">
+            <img class="circle large" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Audacity_Logo_nofilter.svg/640px-Audacity_Logo_nofilter.svg.png">
+              <div class="row">
+                <div class="max">
+                  <h2>Audacity</h2>
+                  <h3>Ses Düzenleyici</h3>
+                  <p class="app-description">Audacity ücretsiz, kullanımı kolay, çok kanallı bir ses düzenleyici ve kaydedicidir.</p>
+                </div>
+              </div>
+              <nav class="bottom-align">
+                <a href="apps/audacity.html">
                 <button>İndir <i>download</i></button>
               </a>
               </nav>
@@ -95,50 +132,16 @@
         </div>
         <div class="s12 m12 l3 cards">
           <article class="round medium">
-            <img class="circle large" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Floorp_logo_without_text.svg/60px-Floorp_logo_without_text.svg.png">
+            <img class="circle large" src="https://windhawk.net/static/media/logo-white.07a58d84.svg">
               <div class="row">
                 <div class="max">
-                  <h2>Floorp</h2>
-                  <h3>İnternet Tarayıcısı</h3>
-                  <p class="app-description">Floorp, Firefox üzerine kurulmuş, Japonya'da geliştirilmiş, mükemmel gizlilik ve esnekliğe sahip yeni bir tarayıcıdır.</p>
+                  <h2>Windhawk</h2>
+                  <h3>Özelleştirme</h3>
+                  <p class="app-description">Windhawk, Windows programlarını özelleştirmeyi kolaylaştırmayı amaçlamaktadır.</p>
                 </div>
               </div>
               <nav class="bottom-align">
-                <a href="apps/floorp.html">
-                <button>İndir <i>download</i></button>
-              </a>
-              </nav>
-            </article>           
-        </div>
-        <div class="s12 m12 l3 cards">
-          <article class="round medium">
-            <img class="circle large" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/KDE-graphics-viewer-document.svg/60px-KDE-graphics-viewer-document.svg.png">
-              <div class="row">
-                <div class="max">
-                  <h2>Okular</h2>
-                  <h3>Belge Görüntüleyici</h3>
-                  <p class="app-description">Okular, PDF, çizgi roman, EPub, görsel, Markdown ve daha birçok belgeyi okuyup görüntüleyebilen çok yönlü bir uygulamadır.</p>
-                </div>
-              </div>
-              <nav class="bottom-align">
-                <a href="apps/okular.html">
-                <button>İndir <i>download</i></button>
-              </a>
-              </nav>
-            </article>           
-        </div>
-        <div class="s12 m12 l3 cards">
-          <article class="round medium">
-            <img class="circle large" src="files/thorium.svg">
-              <div class="row">
-                <div class="max">
-                  <h2>Thorium</h2>
-                  <h3>İnternet Tarayıcısı</h3>
-                  <p class="app-description">Thorium, Chromium tabanlı, çok platformlu bir web tarayıcısıdır.</p>
-                </div>
-              </div>
-              <nav class="bottom-align">
-                <a href="apps/thorium.html">
+                <a href="apps/windhawk.html">
                 <button>İndir <i>download</i></button>
               </a>
               </nav>

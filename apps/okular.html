@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shambali</title>
     <meta property="og:title" content="Okular - Shambali"/>
-    <link href='../style.css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="../style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
-    <script src="../spotlight.bundle.js"></script>
+    <script src="../imageModal.js"></script>
+    <script src="../device-detector.js"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 </head>
 <body>
-    <nav class="left">
+    <nav class="left medium-space navibar" id="navbar">
         <a href="../index.html">
-          <i>home</i>
-          <div>Ana Sayfa</div>
+        <button class="extend square round">
+      <i>home</i>
+      <span>Giriş</span>
+       </button>
         </a>
         <a href="../explore.html">
           <i>widgets</i>
@@ -29,33 +32,27 @@
           <i>code</i>
           <div>Hakkında</div>
         </a>
-    </nav>
-      <main class="responsive">
-        <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/KDE-graphics-viewer-document.svg/640px-KDE-graphics-viewer-document.svg.png" style="float: left;width: 100px;height: 110px;padding:0 10px 10px 0;"><br>
+      </nav>
+      <main class="responsive main">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/KDE-graphics-viewer-document.svg/640px-KDE-graphics-viewer-document.svg.png" style="float: left;width: 100px;height: 110px;margin-right: 20px;"><br>
         <a style="cursor: default;font-size: xx-large">Okular</a>
         <button class="active" style="float: right;">
             <span>İndir</span>
             <i>arrow_drop_down</i>
             <menu>
-              <a href="https://cdn.kde.org/ci-builds/graphics/okular/release-24.12/windows/okular-release_24.12-5938-windows-cl-msvc2022-x86_64.exe" rel="nofollow">Windows</a>
+              <a href="https://cdn.kde.org/ci-builds/graphics/okular/release-25.04/windows/okular-release_25.04-6324-windows-cl-msvc2022-x86_64.exe" rel="nofollow">Windows</a>
               <a data-ui="#dialog2" rel="nofollow">WinGet</a>
               <a data-ui="#dialog" rel="nofollow">Linux</a>
-              <a href="https://cdn.kde.org/ci-builds/graphics/okular/release-24.12/macos-arm64/okular-release_24.12-5938-macos-clang-arm64.dmg" rel="nofollow">MacOS arm64</a>
-              <a href="https://cdn.kde.org/ci-builds/graphics/okular/release-24.12/macos-x86_64/okular-release_24.12-5938-macos-clang-x86_64.dmg" rel="nofollow">MacOS x86_64</a>
+              <a href="https://cdn.kde.org/ci-builds/graphics/okular/release-25.04/macos-arm64/okular-release_25.04-6319-macos-clang-arm64.dmg" rel="nofollow">MacOS arm64</a>
+              <a href="https://cdn.kde.org/ci-builds/graphics/okular/release-25.04/macos-x86_64/okular-release_25.04-6319-macos-clang-x86_64.dmg" rel="nofollow">MacOS x86_64</a>
             </menu>
         </button> 
         <p>Okular, PDF, çizgi roman, EPub, görsel, Markdown ve daha birçok belgeyi okuyup görüntüleyebilen çok yönlü bir uygulamadır.
         </p><br>
-        <div class="spotlight-group row scroll" data-fit="contain" data-autohide="all">
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Okular_21.12.1_screenshot.png/1200px-Okular_21.12.1_screenshot.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Okular_21.12.1_screenshot.png/1200px-Okular_21.12.1_screenshot.png">
-          </a>
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Okular_KDE_5.png/1200px-Okular_KDE_5.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Okular_KDE_5.png/1200px-Okular_KDE_5.png">
-          </a>
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Okular-backend-pdf-1.png/1200px-Okular-backend-pdf-1.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Okular-backend-pdf-1.png/1200px-Okular-backend-pdf-1.png">
-          </a>
+        <div class="row scroll">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Okular_21.12.1_screenshot.png/1200px-Okular_21.12.1_screenshot.png">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Okular_KDE_5.png/1200px-Okular_KDE_5.png">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Okular-backend-pdf-1.png/1200px-Okular-backend-pdf-1.png">
       </div>
       <br>
       <script src="https://giscus.app/client.js"

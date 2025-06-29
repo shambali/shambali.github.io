@@ -6,20 +6,23 @@
     <title>Shambali</title>
     <meta property="og:title" content="7-Zip - Shambali"/>
     <link href="../style.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
-    <script src="../spotlight.bundle.js"></script>
+    <script src="../imageModal.js"></script>
+    <script src="../device-detector.js"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 </head>
 <body>
-    <nav class="left">
+    <nav class="left medium-space navibar" id="navbar">
         <a href="../index.html">
-          <i>home</i>
-          <div>Ana Sayfa</div>
+        <button class="extend square round">
+      <i>home</i>
+      <span>Giriş</span>
+       </button>
         </a>
         <a href="../explore.html">
           <i>widgets</i>
@@ -29,9 +32,9 @@
           <i>code</i>
           <div>Hakkında</div>
         </a>
-    </nav>
-      <main class="responsive">
-        <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/7-Zip_Icon.svg/640px-7-Zip_Icon.svg.png" style="float: left;width: 130px;height: 100px;padding:0 10px 10px 0;"><br>
+      </nav>
+      <main class="responsive main">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/7-Zip_Icon.svg/640px-7-Zip_Icon.svg.png" style="float: left;width: 130px;height: 100px;margin-right: 20px;"><br>
         <a style="cursor: default;font-size: xx-large">7-Zip</a>
         <button class="active" style="float: right;">
             <span>İndir</span>
@@ -44,16 +47,10 @@
             </menu>
         </button> 
         <p>7-Zip, yüksek sıkıştırma oranına sahip bir dosya arşivleyicisidir.</p><br>
-        <div class="spotlight-group row scroll" data-fit="contain" data-autohide="all">
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/5/55/7-Zip.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/5/55/7-Zip.png">
-          </a>
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/c/c7/7-Zip_19.00-DE.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/7-Zip_19.00-DE.png">
-          </a>
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/0/05/7-Zip_19.00_%28x64%29.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/0/05/7-Zip_19.00_%28x64%29.png">
-          </a>
+        <div class="row scroll">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/5/55/7-Zip.png">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/7-Zip_19.00-DE.png">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/0/05/7-Zip_19.00_%28x64%29.png">
       </div>
       <br>
       <script src="https://giscus.app/client.js"

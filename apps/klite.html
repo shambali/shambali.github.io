@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shambali</title>
     <meta property="og:title" content="K-Lite Codec Pack - Shambali"/>
-    <link href='../style.css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="../style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
-    <script src="../spotlight.bundle.js"></script>
+    <script src="../imageModal.js"></script>
+    <script src="../device-detector.js"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 </head>
 <body>
-    <nav class="left">
+    <nav class="left medium-space navibar" id="navbar">
         <a href="../index.html">
-          <i>home</i>
-          <div>Ana Sayfa</div>
+        <button class="extend square round">
+      <i>home</i>
+      <span>Giriş</span>
+       </button>
         </a>
         <a href="../explore.html">
           <i>widgets</i>
@@ -29,30 +32,24 @@
           <i>code</i>
           <div>Hakkında</div>
         </a>
-    </nav>
-      <main class="responsive">
-        <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Media_Player_Classic_logo.png/64px-Media_Player_Classic_logo.png" style="float: left;width: 100px;height: 100px;padding:0 10px 10px 0;"><br>
+      </nav>
+      <main class="responsive main">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Media_Player_Classic_logo.png/64px-Media_Player_Classic_logo.png" style="float: left;width: 100px;height: 100px;margin-right: 20px;"><br>
         <a style="cursor: default;font-size: xx-large">K-Lite Codec Pack</a>
         <button class="active" style="float: right;">
             <span>İndir</span>
             <i>arrow_drop_down</i>
             <menu>
-              <a href="https://files2.codecguide.com/K-Lite_Codec_Pack_1880_Standard.exe" rel="nofollow">Standart</a>
-              <a href="https://files2.codecguide.com/K-Lite_Codec_Pack_1880_Full.exe" rel="nofollow">Full</a>
-              <a href="https://files2.codecguide.com/K-Lite_Codec_Pack_1880_Mega.exe" rel="nofollow">Mega</a>
+              <a href="https://files2.codecguide.com/K-Lite_Codec_Pack_1901_Standard.exe" rel="nofollow">Standart</a>
+              <a href="https://files2.codecguide.com/K-Lite_Codec_Pack_1901_Full.exe" rel="nofollow">Full</a>
+              <a href="https://files2.codecguide.com/K-Lite_Codec_Pack_1901_Mega.exe" rel="nofollow">Mega</a>
             </menu>
         </button> 
         <p>K-Lite Codec Pack, tüm yaygın video dosyası formatlarını oynatmak için ihtiyacınız olan her şeyi içerir.</p><br>
-        <div class="spotlight-group row scroll" data-fit="contain" data-autohide="all">
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/MediaPlayerClassic-HomeCinema.jpg/640px-MediaPlayerClassic-HomeCinema.jpg">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/MediaPlayerClassic-HomeCinema.jpg/640px-MediaPlayerClassic-HomeCinema.jpg">
-          </a>
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Media_Player_Classic_screenshot.png/640px-Media_Player_Classic_screenshot.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Media_Player_Classic_screenshot.png/640px-Media_Player_Classic_screenshot.png">
-          </a>
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/MPC-BE_x64_1.5.2_beta_-_Japanese.png/640px-MPC-BE_x64_1.5.2_beta_-_Japanese.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/MPC-BE_x64_1.5.2_beta_-_Japanese.png/640px-MPC-BE_x64_1.5.2_beta_-_Japanese.png">
-          </a>
+        <div class="row scroll">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/MediaPlayerClassic-HomeCinema.jpg/640px-MediaPlayerClassic-HomeCinema.jpg">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Media_Player_Classic_screenshot.png/640px-Media_Player_Classic_screenshot.png">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/MPC-BE_x64_1.5.2_beta_-_Japanese.png/640px-MPC-BE_x64_1.5.2_beta_-_Japanese.png">
       </div>
       <br>
       <script src="https://giscus.app/client.js"

@@ -6,20 +6,23 @@
     <title>Shambali</title>
     <meta property="og:title" content="Opera - Shambali"/>
     <link href="../style.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
-    <script src="../spotlight.bundle.js"></script>
+    <script src="../imageModal.js"></script>
+    <script src="../device-detector.js"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 </head>
 <body>
-    <nav class="left">
+    <nav class="left medium-space navibar" id="navbar">
         <a href="../index.html">
-          <i>home</i>
-          <div>Ana Sayfa</div>
+        <button class="extend square round">
+      <i>home</i>
+      <span>Giriş</span>
+       </button>
         </a>
         <a href="../explore.html">
           <i>widgets</i>
@@ -29,9 +32,9 @@
           <i>code</i>
           <div>Hakkında</div>
         </a>
-    </nav>
-      <main class="responsive">
-        <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Opera_2015_icon.svg/800px-Opera_2015_icon.svg.png" style="float: left;width: 100px;height: 100px;padding:0 10px 10px 0;"><br>
+      </nav>
+      <main class="responsive main">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Opera_2015_icon.svg/800px-Opera_2015_icon.svg.png" style="float: left;width: 100px;height: 100px;margin-right: 20px;"><br>
         <a style="cursor: default;font-size: xx-large">Opera</a>
         <button class="active" style="float: right;">
             <span>İndir</span>
@@ -39,21 +42,15 @@
             <menu>
               <a href="https://net.geo.opera.com/opera/stable/windows">Windows</a>
               <a data-ui="#dialog" rel="nofollow">WinGet</a>
-              <a href="https://download3.operacdn.com/ftp/pub/opera/desktop/117.0.5408.35/linux/opera-stable_117.0.5408.35_amd64.deb" rel="nofollow">Linux</a>
+              <a href="https://download5.operacdn.com/ftp/pub/opera/desktop/119.0.5497.131/linux/opera-stable_119.0.5497.131_amd64.deb" rel="nofollow">Linux</a>
               <a href="https://net.geo.opera.com/opera/stable/mac" rel="nofollow">MacOS</a>
             </menu>
         </button> 
         <p>Opera, kullanıcılarına hızlı bir internet deneyimini gelişmiş özelliklerle sunmayı hedefleyen internet tarayıcısıdır.</p><br>
-        <div class="spotlight-group row scroll" data-fit="contain" data-autohide="all">
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/tr/1/1d/Opera_v43_H%C4%B1zl%C4%B1_Eri%C5%9Fim.jpg">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/tr/1/1d/Opera_v43_H%C4%B1zl%C4%B1_Eri%C5%9Fim.jpg">
-          </a>
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/%D0%A1%D0%BA%D1%80%D1%96%D0%BD%D1%88%D0%BE%D1%82_Opera_63.png/1280px-%D0%A1%D0%BA%D1%80%D1%96%D0%BD%D1%88%D0%BE%D1%82_Opera_63.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/%D0%A1%D0%BA%D1%80%D1%96%D0%BD%D1%88%D0%BE%D1%82_Opera_63.png/1280px-%D0%A1%D0%BA%D1%80%D1%96%D0%BD%D1%88%D0%BE%D1%82_Opera_63.png">
-          </a>
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/c/c3/Opera_Browser_Beta.PNG">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Opera_Browser_Beta.PNG">
-          </a>
+        <div class="row scroll">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/tr/1/1d/Opera_v43_H%C4%B1zl%C4%B1_Eri%C5%9Fim.jpg">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/%D0%A1%D0%BA%D1%80%D1%96%D0%BD%D1%88%D0%BE%D1%82_Opera_63.png/1280px-%D0%A1%D0%BA%D1%80%D1%96%D0%BD%D1%88%D0%BE%D1%82_Opera_63.png">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Opera_Browser_Beta.PNG">
       </div>
       <br>
       <script src="https://giscus.app/client.js"

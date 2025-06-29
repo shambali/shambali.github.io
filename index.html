@@ -8,19 +8,22 @@
     <meta name="keywords" content="Shambali, program indir, ücretsiz program, yazılım indir, bilgisayar programları, windows program indir, mac program indir, en iyi programlar, popüler programlar, güvenli program indir, hızlı program indir, son sürüm programlar, program arşivi, program listesi, program incelemeleri, program alternatifleri, açık kaynak programlar, ticari programlar, eğitim programları, oyun indir, uygulama mağazası, program kategorileri, program güncelleme, program kurulumu, program desteği, program forum, program blog, program haberleri, program kampanyaları, program indirimleri, program kuponları, lisanslı programlar, tam sürüm programlar, deneme sürümü programlar, online programlar, çevrimdışı programlar, güvenilir program siteleri">
     <meta name="google-site-verification" content="r-ATJ5xz_qJAInsI11bBJ_s23WSHEPaMu9J2SGeG7V0"/>
     <title>Shambali</title>
-    <link href='style.css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
+    <script type="module" src="device-detector.js"></script>
     <link rel="icon" class="favicon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" class="favicon" href="favicon.ico" type="image/x-icon" />
 </head>
-<body onload="startTime()">
-    <nav class="left">
+<body onload="startTime()" style="padding-bottom: 0;">
+    <nav class="left medium-space navibar" id="navbar">
         <a href="index.html">
-          <i>home</i>
-          <div>Ana Sayfa</div>
+        <button class="extend square round">
+      <i>home</i>
+      <span>Giriş</span>
+       </button>
         </a>
         <a href="explore.html">
           <i>widgets</i>
@@ -31,7 +34,7 @@
           <div>Hakkında</div>
         </a>
       </nav>
-      <main class="responsive">
+      <main class="responsive main">
         <img src="logo.png" class="main-logo" alt="Şambali" style="float: left;width: 100px;height: 100px;padding:0 10px 10px 0;">
         <h1>Shambali</h1>
         <div id="date"></div>
@@ -80,40 +83,36 @@
         </div>
       </div>
         <div class="rcard">
-        <a class="card-alt" href="apps/shotcut.html">
+        <a class="card-alt" href="apps/qmplay2.html">
           <article class="round card-alt ripple">
-            <img class="large" src="files/shotcut-logo-512x512.png">
-              <div class="row">
-                <div class="max">
-                  <h2>Shotcut</h2>
-                </div>
-              </div>
+            <img class="large" src="https://dl.flathub.org/media/io/github/zaps166.QMPlay2/090788457f1e4e3983ecc56769adb1d1/icons/128x128@2/io.github.zaps166.QMPlay2.png">
+                  <h2>QMPlay2</h2>
             </article>         
         </a>
-        <a class="card-alt" href="apps/floorp.html">
+        <a class="card-alt" href="apps/obs.html">
           <article class="round card-alt ripple">
-            <img class="large" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Floorp_logo_without_text.svg/60px-Floorp_logo_without_text.svg.png">
-              <div class="row">
-                <div class="max">
-                  <h2>Floorp</h2>
+            <img class="large" src="https://obsproject.com/assets/images/new_icon_small-r.png">
+                  <h2>OBS</h2>
             </article>           
           </a>
-        <a class="card-alt" href="apps/okular.html">
+        <a class="card-alt" href="apps/audacity.html">
           <article class="round card-alt ripple">
-            <img class="large" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/KDE-graphics-viewer-document.svg/60px-KDE-graphics-viewer-document.svg.png">
-                  <h2>Okular</h2>
+            <img class="large" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Audacity_Logo_nofilter.svg/640px-Audacity_Logo_nofilter.svg.png">
+                  <h2>Audacity</h2>
             </article>           
         </a>
-        <a class="l3" href="apps/thorium.html">
+        <a class="l3" href="apps/windhawk.html">
           <article class="round ripple">
             <div style="display: flex; align-items: center;">
-              <img class="large" src="files/thorium.svg">
-              <h2 class="small-margin">Thorium</h2>
+              <img class="large" src="https://windhawk.net/static/media/logo-white.07a58d84.svg">
+              <h2 class="small-margin">Windhawk</h2>
             </div>
-            <p class="app-description-alt no-round">Thorium, Chromium tabanlı, çok platformlu bir web tarayıcısıdır.</p>
+            <p class="app-description-alt no-round">Windhawk, Windows programlarını özelleştirmeyi kolaylaştırmayı amaçlamaktadır.</p>
             </article>           
         </a>
         </div>
+        </div>
+      </main>
       <script>
         localStorage.clear();
       // https://codepen.io/paarmita/pen/YroXwv

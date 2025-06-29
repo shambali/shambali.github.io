@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shambali</title>
     <meta property="og:title" content="Shotcut - Shambali"/>
-    <link href='../style.css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="../style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
-    <script src="../spotlight.bundle.js"></script>
+    <script src="../imageModal.js"></script>
+    <script src="../device-detector.js"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 </head>
 <body>
-    <nav class="left">
+    <nav class="left medium-space navibar" id="navbar">
         <a href="../index.html">
-          <i>home</i>
-          <div>Ana Sayfa</div>
+        <button class="extend square round">
+      <i>home</i>
+      <span>Giriş</span>
+       </button>
         </a>
         <a href="../explore.html">
           <i>widgets</i>
@@ -29,31 +32,25 @@
           <i>code</i>
           <div>Hakkında</div>
         </a>
-    </nav>
-      <main class="responsive">
-        <br><img src="../files/shotcut-logo-512x512.png" style="float: left;width: 100px;height: 100px;padding:0 10px 10px 0;"><br>
+      </nav>
+      <main class="responsive main">
+        <img src="../files/shotcut-logo-512x512.png" style="float: left;width: 100px;height: 100px;margin-right: 20px;"><br>
         <a style="cursor: default;font-size: xx-large">Shotcut</a>
         <button class="active" style="float: right;">
             <span>İndir</span>
             <i>arrow_drop_down</i>
             <menu>
-              <a href="https://netix.dl.sourceforge.net/project/shotcut/v25.03.29/shotcut-win64-250329.exe?viasf=1" rel="nofollow">Windows</a>
-              <a data-ui="#dialog2" rel="nofollow">WinGet</a>
-              <a data-ui="#dialog" rel="nofollow">Linux</a>
-              <a href="https://netix.dl.sourceforge.net/project/shotcut/v25.03.29/shotcut-macos-250329.dmg?viasf=1" rel="nofollow">MacOS</a>
+              <a href="https://netix.dl.sourceforge.net/project/shotcut/v25.05.11/shotcut-win64-250511.exe?viasf=1" rel="nofollow">Windows</a>
+              <a data-ui="#dialog" rel="nofollow">WinGet</a>
+              <a href="https://netix.dl.sourceforge.net/project/shotcut/v25.05.11/shotcut-linux-x86_64-250511.AppImage?viasf=1" rel="nofollow">Linux</a>
+              <a href="https://netix.dl.sourceforge.net/project/shotcut/v25.05.11/shotcut-macos-250511.dmg?viasf=1" rel="nofollow">MacOS</a>
             </menu>
         </button> 
         <p>Shotcut, Windows, Mac ve Linux için ücretsiz, açık kaynaklı, çok platformlu bir video düzenleyicisidir.</p><br>
-        <div class="spotlight-group row scroll" data-fit="contain" data-autohide="all">
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Shotcut_printscreen_cs.png/800px-Shotcut_printscreen_cs.png?20250115132051">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Shotcut_printscreen_cs.png/800px-Shotcut_printscreen_cs.png?20250115132051">
-          </a>
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Shotcut_screenshot.png/640px-Shotcut_screenshot.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Shotcut_screenshot.png/640px-Shotcut_screenshot.png">
-          </a>
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Shotcut-22.12.22-about.png/640px-Shotcut-22.12.22-about.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Shotcut-22.12.22-about.png/640px-Shotcut-22.12.22-about.png">
-          </a>
+        <div class="row scroll">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Shotcut_printscreen_cs.png/800px-Shotcut_printscreen_cs.png?20250115132051">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Shotcut_screenshot.png/640px-Shotcut_screenshot.png">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Shotcut-22.12.22-about.png/640px-Shotcut-22.12.22-about.png">
       </div>
       <br>
       <script src="https://giscus.app/client.js"
@@ -73,17 +70,10 @@
       </script>
       </main>  
       <dialog id="dialog">
-        <h5>Tek komutla indirin!</h5>
-        <p><code>snap install shotcut --classic</code></p>
-        <nav>
-          <button data-ui="#dialog">Geri</button>
-        </nav>
-      </dialog>
-      <dialog id="dialog2">
         <h5>WinGet ile indirin!</h5>
         <p><code>winget install --id=Meltytech.Shotcut  -e</code></p>
         <nav>
-          <button data-ui="#dialog2">Geri</button>
+          <button data-ui="#dialog">Geri</button>
         </nav>
       </dialog>
       <script>

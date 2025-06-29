@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shambali</title>
     <meta property="og:title" content="Floorp - Shambali"/>
-    <link href='../style.css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="../style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
-    <script src="../spotlight.bundle.js"></script>
+    <script src="../imageModal.js"></script>
+    <script src="../device-detector.js"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 </head>
 <body>
-    <nav class="left">
+    <nav class="left medium-space navibar" id="navbar">
         <a href="../index.html">
-          <i>home</i>
-          <div>Ana Sayfa</div>
+        <button class="extend square round">
+      <i>home</i>
+      <span>Giriş</span>
+       </button>
         </a>
         <a href="../explore.html">
           <i>widgets</i>
@@ -29,32 +32,26 @@
           <i>code</i>
           <div>Hakkında</div>
         </a>
-    </nav>
-      <main class="responsive">
-        <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Floorp_logo_without_text.svg/640px-Floorp_logo_without_text.svg.png" style="float: left;width: 110px;height: 100px;padding:0 10px 10px 0;"><br>
+      </nav>
+      <main class="responsive main">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Floorp_logo_without_text.svg/640px-Floorp_logo_without_text.svg.png" style="float: left;width: 110px;height: 100px;margin-right: 20px;"><br>
         <a style="cursor: default;font-size: xx-large">Floorp</a>
         <button class="active" style="float: right;">
             <span>İndir</span>
             <i>arrow_drop_down</i>
             <menu>
-              <a href="https://github.com/Floorp-Projects/Floorp/releases/download/v11.25.0/floorp-win64.installer.exe" rel="nofollow">Windows</a>
+              <a href="https://github.com/Floorp-Projects/Floorp/releases/download/v11.28.0/floorp-win64.installer.exe" rel="nofollow">Windows</a>
               <a data-ui="#dialog2" rel="nofollow">WinGet</a>
               <a data-ui="#dialog" rel="nofollow">Linux</a>
-              <a href="https://github.com/Floorp-Projects/Floorp/releases/download/v11.25.0/floorp-macOS-universal.dmg" rel="nofollow">MacOS</a>
+              <a href="https://github.com/Floorp-Projects/Floorp/releases/download/v11.28.0/floorp-macOS-universal.dmg" rel="nofollow">MacOS</a>
             </menu>
         </button> 
         <p>Floorp, Firefox üzerine kurulmuş, Japonya'da geliştirilmiş, mükemmel gizlilik ve esnekliğe sahip yeni bir tarayıcıdır.
         </p><br>
-        <div class="spotlight-group row scroll" data-fit="contain" data-autohide="all">
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Floorp-ru-wikipedia.png/1200px-Floorp-ru-wikipedia.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Floorp-ru-wikipedia.png/1200px-Floorp-ru-wikipedia.png">
-          </a>
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Floorp_11.23.1_screenshot.webp/1200px-Floorp_11.23.1_screenshot.webp.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Floorp_11.23.1_screenshot.webp/1200px-Floorp_11.23.1_screenshot.webp.png">
-          </a>
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Floorp_Browser_11.1.2_Screenshot.png/1200px-Floorp_Browser_11.1.2_Screenshot.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Floorp_Browser_11.1.2_Screenshot.png/1200px-Floorp_Browser_11.1.2_Screenshot.png">
-          </a>
+        <div class="row scroll">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Floorp-ru-wikipedia.png/1200px-Floorp-ru-wikipedia.png">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Floorp_11.23.1_screenshot.webp/1200px-Floorp_11.23.1_screenshot.webp.png">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Floorp_Browser_11.1.2_Screenshot.png/1200px-Floorp_Browser_11.1.2_Screenshot.png">
       </div>
       <br>
       <script src="https://giscus.app/client.js"

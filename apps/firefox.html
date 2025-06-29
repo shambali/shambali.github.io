@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shambali</title>
     <meta property="og:title" content="Firefox - Shambali"/>
-    <link href='../style.css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="../style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
-    <script src="../spotlight.bundle.js"></script>
+    <script src="../imageModal.js"></script>
+    <script src="../device-detector.js"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 </head>
 <body>
-    <nav class="left">
+    <nav class="left medium-space navibar" id="navbar">
         <a href="../index.html">
-          <i>home</i>
-          <div>Ana Sayfa</div>
+        <button class="extend square round">
+      <i>home</i>
+      <span>Giriş</span>
+       </button>
         </a>
         <a href="../explore.html">
           <i>widgets</i>
@@ -29,31 +32,26 @@
           <i>code</i>
           <div>Hakkında</div>
         </a>
-    </nav>
-      <main class="responsive">
-        <br><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Firefox_logo%2C_2019.png" style="float: left;width: 100px;height: 100px;padding:0 10px 10px 0;"><br>
-        <a style="cursor: default;font-size: xx-large">Mozilla Fiefox</a>
+      </nav>
+      <main class="responsive main">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Firefox_logo%2C_2019.png" style="float: left;width: 100px;height: 100px;margin-right: 20px;"><br>
+        <a style="cursor: default;font-size: xx-large">Mozilla Firefox</a>
         <button class="active" style="float: right;">
             <span>İndir</span>
             <i>arrow_drop_down</i>
             <menu>
-              <a href="https://download-installer.cdn.mozilla.net/pub/firefox/releases/135.0/win32/tr/Firefox%20Installer.exe">Windows</a>
+              <a href="https://download.mozilla.org/?product=firefox-latest&os=win64&lang=tr">Windows</a>
+              <a href="https://download.mozilla.org/?product=firefox-latest&os=win&lang=tr">Windows x86</a>
               <a data-ui="#dialog" rel="nofollow">WinGet</a>
-              <a href="https://download-installer.cdn.mozilla.net/pub/firefox/releases/135.0/linux-x86_64/tr/firefox-135.0.tar.xz" rel="nofollow">Linux</a>
-              <a href="https://download-installer.cdn.mozilla.net/pub/firefox/releases/135.0/mac/tr/Firefox%20135.0.dmg" rel="nofollow">MacOS</a>
+              <a href="https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=tr" rel="nofollow">Linux</a>
+              <a href="https://download.mozilla.org/?product=firefox-latest&os=osx&lang=tr" rel="nofollow">MacOS</a>
             </menu>
         </button> 
         <p>Firefox, sağlıklı bir interneti ve gizliliği savunan Mozilla'nın geliştirdiği ücretsiz bir web tarayıcısıdır.</p><br>
-        <div class="spotlight-group row scroll" data-fit="contain" data-autohide="all">
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Firefox_89_en_Windows_10.png/640px-Firefox_89_en_Windows_10.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Firefox_89_en_Windows_10.png/640px-Firefox_89_en_Windows_10.png">
-          </a>
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Firefox_96_screenshot.png/640px-Firefox_96_screenshot.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Firefox_96_screenshot.png/640px-Firefox_96_screenshot.png">
-          </a>
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mozilla_Firefox_in_Interlingua.png/640px-Mozilla_Firefox_in_Interlingua.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mozilla_Firefox_in_Interlingua.png/640px-Mozilla_Firefox_in_Interlingua.png">
-          </a>
+        <div class="row scroll">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Firefox_89_en_Windows_10.png/640px-Firefox_89_en_Windows_10.png">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Firefox_96_screenshot.png/640px-Firefox_96_screenshot.png">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mozilla_Firefox_in_Interlingua.png/640px-Mozilla_Firefox_in_Interlingua.png">
       </div>
       <br>
       <script src="https://giscus.app/client.js"

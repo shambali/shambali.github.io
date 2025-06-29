@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shambali</title>
     <meta property="og:title" content="VLC - Shambali"/>
-    <link href='../style.css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="../style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
-    <script src="../spotlight.bundle.js"></script>
+    <script src="../imageModal.js"></script>
+    <script src="../device-detector.js"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 </head>
 <body>
-    <nav class="left">
+    <nav class="left medium-space navibar" id="navbar">
         <a href="../index.html">
-          <i>home</i>
-          <div>Ana Sayfa</div>
+        <button class="extend square round">
+      <i>home</i>
+      <span>Giriş</span>
+       </button>
         </a>
         <a href="../explore.html">
           <i>widgets</i>
@@ -29,9 +32,9 @@
           <i>code</i>
           <div>Hakkında</div>
         </a>
-    </nav>
-      <main class="responsive">
-        <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/VLC_Icon.svg/1200px-VLC_Icon.svg.png" style="float: left;width: 100px;height: 100px;padding:0 10px 10px 0;"><br>
+      </nav>
+      <main class="responsive main">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/VLC_Icon.svg/1200px-VLC_Icon.svg.png" style="float: left;width: 100px;height: 113px;padding:0 10px 10px 0;margin-right: 10px;"><br>
         <a style="cursor: default;font-size: xx-large">VLC</a>
         <button class="active" style="float: right;">
             <span>İndir</span>
@@ -45,16 +48,10 @@
             </menu>
         </button> 
         <p>VLC, özgür ve açık kaynak kodlu, platformlar arası, bir ortam oynatıcı ve çatıdır.</p><br>
-        <div class="spotlight-group row scroll" data-fit="contain" data-autohide="all">
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/%C3%9Cber_VLC_Media_Player_20201227.png/800px-%C3%9Cber_VLC_Media_Player_20201227.png?20201227192526">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/%C3%9Cber_VLC_Media_Player_20201227.png/800px-%C3%9Cber_VLC_Media_Player_20201227.png?20201227192526">
-          </a>
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/VLC_media_player_3.0.12_%28released_in_2021-01%29.png/640px-VLC_media_player_3.0.12_%28released_in_2021-01%29.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/VLC_media_player_3.0.12_%28released_in_2021-01%29.png/640px-VLC_media_player_3.0.12_%28released_in_2021-01%29.png">
-          </a>
-          <a class="spotlight" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Icon_mit_Weihnachtsm%C3%BCtze_20201219_VLC_Media_Player.png/1200px-Icon_mit_Weihnachtsm%C3%BCtze_20201219_VLC_Media_Player.png">
-              <img class="medium-width small-height round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Icon_mit_Weihnachtsm%C3%BCtze_20201219_VLC_Media_Player.png/1200px-Icon_mit_Weihnachtsm%C3%BCtze_20201219_VLC_Media_Player.png">
-          </a>
+        <div class="row scroll">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/%C3%9Cber_VLC_Media_Player_20201227.png/800px-%C3%9Cber_VLC_Media_Player_20201227.png?20201227192526">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/VLC_media_player_3.0.12_%28released_in_2021-01%29.png/640px-VLC_media_player_3.0.12_%28released_in_2021-01%29.png">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Icon_mit_Weihnachtsm%C3%BCtze_20201219_VLC_Media_Player.png/1200px-Icon_mit_Weihnachtsm%C3%BCtze_20201219_VLC_Media_Player.png">
       </div>
       <br>
       <script src="https://giscus.app/client.js"

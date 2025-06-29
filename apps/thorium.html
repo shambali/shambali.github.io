@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shambali</title>
     <meta property="og:title" content="Thorium - Shambali"/>
-    <link href='../style.css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="../style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
-    <script src="../spotlight.bundle.js"></script>
+    <script src="../imageModal.js"></script>
+    <script src="../device-detector.js"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 </head>
 <body>
-    <nav class="left">
+    <nav class="left medium-space navibar" id="navbar">
         <a href="../index.html">
-          <i>home</i>
-          <div>Ana Sayfa</div>
+        <button class="extend square round">
+      <i>home</i>
+      <span>Giriş</span>
+       </button>
         </a>
         <a href="../explore.html">
           <i>widgets</i>
@@ -29,9 +31,9 @@
           <i>code</i>
           <div>Hakkında</div>
         </a>
-    </nav>
-      <main class="responsive">
-        <br><img src="../files/thorium.svg" style="float: left;width: 100px;height: 100px;padding:0 10px 10px 0;"><br>
+      </nav>
+      <main class="responsive main">
+        <img src="../files/thorium.svg" style="float: left;width: 100px;height: 100px;margin-right: 20px;"><br>
         <a style="cursor: default;font-size: xx-large">Thorium</a>
         <button class="active" style="float: right;">
             <span>İndir</span>
@@ -48,13 +50,9 @@
         </button> 
         <p>Thorium, Chromium tabanlı, çok platformlu bir web tarayıcısıdır.
         </p><br>
-        <div class="spotlight-group row scroll" data-fit="contain" data-autohide="all">
-          <a class="spotlight" href="../files/thoriumss.jpg">
-              <img class="medium-width small-height round" src="../files/thoriumss.jpg">
-          </a>
-          <a class="spotlight" href="../files/thoriumss2.jpg">
-              <img class="medium-width small-height round" src="../files/thoriumss2.jpg">
-          </a>
+        <div class="row scroll">
+              <img class="medium-width small-height round enlargeable-image" src="../files/thoriumss.jpg">
+              <img class="medium-width small-height round enlargeable-image" src="../files/thoriumss2.jpg">
       </div>
       <br>
       <script src="https://giscus.app/client.js"

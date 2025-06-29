@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shambali</title>
-    <meta property="og:title" content="WinRAR - Shambali"/>
+    <meta property="og:title" content="Audacity - Shambali"/>
     <link href="../style.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
     <script src="../imageModal.js"></script>
@@ -34,24 +33,24 @@
         </a>
       </nav>
       <main class="responsive main">
-        <img src="../files/winrar.png" style="float: left;width: 100px;height: 100px;margin-right: 20px;"><br>
-        <a style="cursor: default;font-size: xx-large">WinRAR</a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Audacity_Logo_nofilter.svg/640px-Audacity_Logo_nofilter.svg.png" style="float: left;width: 100px;height: 100px;margin-right: 20px;"><br>
+        <a style="cursor: default;font-size: xx-large">Audacity</a>
         <button class="active" style="float: right;">
             <span>İndir</span>
             <i>arrow_drop_down</i>
             <menu>
-              <a href="https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-710tr.exe">Windows</a>
+              <a href="https://muse-cdn.com/Audacity_Installer_via_MuseHub.exe" rel="nofollow">Windows</a>
               <a data-ui="#dialog" rel="nofollow">WinGet</a>
-              <a href="https://www.win-rar.com/fileadmin/winrar-versions/rarlinux-x64-710.tar.gz" rel="nofollow">Linux</a>
-              <a href="https://www.win-rar.com/fileadmin/winrar-versions/rarmacos-arm-710.tar.gz" rel="nofollow">MacOS ARM</a>
-              <a href="https://www.win-rar.com/fileadmin/winrar-versions/rarmacos-x64-710.tar.gz" rel="nofollow">MacOS x64</a>
+              <a data-ui="#dialog2" rel="nofollow">Linux</a>
+              <a href="https://muse-cdn.com/Audacity_Installer_via_MuseHub.dmg" rel="nofollow">MacOS</a>
             </menu>
         </button> 
-        <p>WinRAR, tüm popüler dosya formatlarını açabilen güçlü bir arşivleyici (RAR ve ZIP) ve çıkarma aracıdır.</p><br>
+        <p>Audacity ücretsiz, kullanımı kolay, çok kanallı bir ses düzenleyici ve kaydedicidir.
+        </p><br>
         <div class="row scroll">
-              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/id/thumb/5/5a/WinRAR.png/1000px-WinRAR.png">
-              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/it/8/86/WinRAR-screenshot.PNG">
-              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/ru/thumb/5/5a/WinRAR.png/800px-WinRAR.png">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Audacity_version_3.3.png/1000px-Audacity_version_3.3.png">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Audacity_Version_3_in_Dark_Theme.png/1000px-Audacity_Version_3_in_Dark_Theme.png">
+              <img class="medium-width small-height round enlargeable-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Audacity_v._3.0.2.png/1000px-Audacity_v._3.0.2.png">
       </div>
       <br>
       <script src="https://giscus.app/client.js"
@@ -72,9 +71,16 @@
       </main>  
       <dialog id="dialog">
         <h5>WinGet ile indirin!</h5>
-        <p><code>winget install --id=RARLab.WinRAR  -e</code></p>
+        <p><code>winget install --id=Audacity.Audacity  -e</code></p>
         <nav>
           <button data-ui="#dialog">Geri</button>
+        </nav>
+      </dialog>
+      <dialog id="dialog2">
+        <h5>Tek komutla indirin! (Flatpak)</h5>
+        <p><code>flatpak install flathub org.audacityteam.Audacity</code></p>
+        <nav>
+          <button data-ui="#dialog2">Geri</button>
         </nav>
       </dialog>
       <script>
@@ -94,6 +100,6 @@
             // Sayfa yüklendiğinde ve tema değiştiğinde fonksiyonu çağır
             temaKontrolFavicon();
             window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', temaKontrolFavicon);
-      </script> 
+      </script>   
 </body>
 </html>

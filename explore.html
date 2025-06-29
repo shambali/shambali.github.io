@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shambali</title>
-    <link href='style.css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
     <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
-    <script src="spotlight.bundle.js"></script>
+    <script src="device-detector.js"></script>
     <script src="search.js"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
-    <nav class="left">
+    <nav class="left medium-space navibar" id="navbar">
         <a href="index.html">
-          <i>home</i>
-          <div>Ana Sayfa</div>
+        <button class="extend square round">
+      <i>home</i>
+      <span>Giriş</span>
+       </button>
         </a>
         <a href="explore.html">
           <i>widgets</i>
@@ -28,9 +30,9 @@
           <i>code</i>
           <div>Hakkında</div>
         </a>
-    </nav>
+      </nav>
       <!--https://css-tricks.com/in-page-filtered-search-with-vanilla-javascript/-->
-      <main class="responsive">
+      <main class="responsive main">
         <a style="cursor: default;font-size: 300%;"><i style="font-size: 100%;padding: 13%;">widgets</i>Keşfet</a>
         <div class="field label prefix border large round">
           <i>search</i>
@@ -371,6 +373,74 @@
               </div>
               <nav class="bottom-align">
                 <a href="apps/thorium.html">
+                <button>İndir <i>download</i></button>
+              </a>
+              </nav>
+            </article>           
+        </div>
+        <div class="s12 m12 l3 cards">
+          <article class="round medium">
+            <img class="circle large" src="https://dl.flathub.org/media/io/github/zaps166.QMPlay2/090788457f1e4e3983ecc56769adb1d1/icons/128x128@2/io.github.zaps166.QMPlay2.png">
+              <div class="row">
+                <div class="max">
+                  <h2>QMPlay2</h2>
+                  <h3>Medya Oynatıcısı</h3>
+                  <p class="app-description">QMPlay2, çoğu formatı ve codec'i oynatabilen bir video ve ses oynatıcıdır.</p>
+                </div>
+              </div>
+              <nav class="bottom-align">
+                <a href="apps/qmplay2.html">
+                <button>İndir <i>download</i></button>
+              </a>
+              </nav>
+            </article>           
+        </div>
+      <div class="s12 m12 l3 cards">
+          <article class="round medium">
+            <img class="circle large" src="https://obsproject.com/assets/images/new_icon_small-r.png">
+              <div class="row">
+                <div class="max">
+                  <h2>OBS</h2>
+                  <h3>Ekran Yakalayıcı</h3>
+                  <p class="app-description">Video kaydı ve canlı yayın için özgür ve açık kaynaklı yazılım.</p>
+                </div>
+              </div>
+              <nav class="bottom-align">
+                <a href="apps/obs.html">
+                <button>İndir <i>download</i></button>
+              </a>
+              </nav>
+            </article>           
+        </div>
+      <div class="s12 m12 l3 cards">
+          <article class="round medium">
+            <img class="circle large" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Audacity_Logo_nofilter.svg/640px-Audacity_Logo_nofilter.svg.png">
+              <div class="row">
+                <div class="max">
+                  <h2>Audacity</h2>
+                  <h3>Ses Düzenleyici</h3>
+                  <p class="app-description">Audacity ücretsiz, kullanımı kolay, çok kanallı bir ses düzenleyici ve kaydedicidir.</p>
+                </div>
+              </div>
+              <nav class="bottom-align">
+                <a href="apps/audacity.html">
+                <button>İndir <i>download</i></button>
+              </a>
+              </nav>
+            </article>           
+        </div>
+        <div class="s12 m12 l3 cards">
+          <article class="round medium">
+            <img class="circle large" src="https://windhawk.net/static/media/logo-white.07a58d84.svg">
+              <div class="row">
+                <div class="max">
+                  <h2>Windhawk</h2>
+                  <h3>Özelleştirme</h3>
+                  <p class="app-description">Windhawk, Windows programlarını özelleştirmeyi kolaylaştırmayı amaçlamaktadır.</p>
+                </div>
+              </div>
+              <nav class="bottom-align">
+                <a href="apps/windhawk.html">
                 <button>İndir <i>download</i></button>
               </a>
               </nav>

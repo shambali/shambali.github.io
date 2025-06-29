@@ -5,83 +5,16 @@ body {
 
 .is-hidden { display: none; }
 
-body.dark {
---primary:#d3bbff !important;
---on-primary:#3f008d !important;
---primary-container:#5727a6 !important;
---on-primary-container:#ebddff !important;
---secondary:#cdc2db !important;
---on-secondary:#342d40 !important;
---secondary-container:#4b4358 !important;
---on-secondary-container:#e9def8 !important;
---tertiary:#f0b7c5 !important;
---on-tertiary:#4a2530 !important;
---tertiary-container:#643b46 !important;
---on-tertiary-container:#ffd9e1 !important;
---error:#ffb4ab !important;
---on-error:#690005 !important;
---error-container:#93000a !important;
---on-error-container:#ffb4ab !important;
---background:#1d1b1e !important;
---on-background:#e6e1e6 !important;
---surface:#141316 !important;
---on-surface:#e6e1e6 !important;
---surface-variant:#49454e !important;
---on-surface-variant:#cbc4cf !important;
---outline:#948f99 !important;
---outline-variant:#49454e !important;
---shadow:#000000 !important;
---scrim:#000000 !important;
---inverse-surface:#e6e1e6 !important;
---inverse-on-surface:#323033 !important;
---inverse-primary:#6f43c0 !important;
---surface-dim:#141316 !important;
---surface-bright:#3b383c !important;
---surface-container-lowest:#0f0e11 !important;
---surface-container-low:#1d1b1e !important;
---surface-container:#211f22 !important;
---surface-container-high:#2b292d !important;
---surface-container-highest:#363438 !important;
+.navibar{
+  margin-top: 3.5% !important;
+  margin-left: 1.5% !important;
+  
 }
 
-body.light {
---primary:#6f43c0 !important;
---on-primary:#ffffff !important;
---primary-container:#ebddff !important;
---on-primary-container:#250059 !important;
---secondary:#635b70 !important;
---on-secondary:#ffffff !important;
---secondary-container:#e9def8 !important;
---on-secondary-container:#1f182b !important;
---tertiary:#7e525d !important;
---on-tertiary:#ffffff !important;
---tertiary-container:#ffd9e1 !important;
---on-tertiary-container:#31101b !important;
---error:#ba1a1a !important;
---on-error:#ffffff !important;
---error-container:#ffdad6 !important;
---on-error-container:#410002 !important;
---background:#fffbff !important;
---on-background:#1d1b1e !important;
---surface:#fef8fd !important;
---on-surface:#1d1b1e !important;
---surface-variant:#e7e0eb !important;
---on-surface-variant:#49454e !important;
---outline:#7a757f !important;
---outline-variant:#cbc4cf !important;
---shadow:#000000 !important;
---scrim:#000000 !important;
---inverse-surface:#323033 !important;
---inverse-on-surface:#f5eff4 !important;
---inverse-primary:#d3bbff !important;
---surface-dim:#ded8dd !important;
---surface-bright:#fef8fd !important;
---surface-container-lowest:#ffffff !important;
---surface-container-low:#f8f2f7 !important;
---surface-container:#f2ecf1 !important;
---surface-container-high:#ece6eb !important;
---surface-container-highest:#e6e1e6 !important;
-    }
+.main{
+  margin-left: 3% !important;
+}
+
     .app-description {
       max-height: 80px;
       overflow: hidden;
@@ -114,6 +47,7 @@ body.light {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    padding-left: 5px;
   }
   
   .lcard {
